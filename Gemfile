@@ -8,6 +8,7 @@ gem "importmap-rails"
 gem "turbo-rails"
 gem "stimulus-rails"
 gem "jbuilder"
+gem 'sass-rails', '~> 6.0'
 gem 'devise', '~> 4.9', '>= 4.9.4'
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "solid_cache"
