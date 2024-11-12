@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 
 class Users::SessionsController < Devise::SessionsController
+  def some_action
+    @fallback_path = root_path  # Defina aqui o caminho de fallback desejado
+  end
+  
   # before_action :configure_sign_in_params, only: [:create]
 
   # GET /resource/sign_in

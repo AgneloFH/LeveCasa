@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 
 class Users::ConfirmationsController < Devise::ConfirmationsController
+  def some_action
+    @fallback_path = root_path  # Defina aqui o caminho de fallback desejado
+  end
+
   # GET /resource/confirmation/new
   # def new
   #   super

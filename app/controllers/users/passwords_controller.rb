@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 
 class Users::PasswordsController < Devise::PasswordsController
+  def some_action
+    @fallback_path = root_path  # Defina aqui o caminho de fallback desejado
+  end
+
   # GET /resource/password/new
   # def new
   #   super
