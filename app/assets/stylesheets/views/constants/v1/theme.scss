@@ -1,0 +1,35 @@
+:root {
+  --colorPri: #6629f3;
+  --colorSec1: #312C51;
+  --colorSec2: #48426D;
+  --colorBlack: #000000;
+  --colorBlack2: #1D2939;
+  --colorWhite: #ffff;
+  --colorGray1: #F4F3FF;
+  --colorGray2: #98A2B3;
+  --colorGray3: #616161;
+  --colorSoaMist: #C2DEB9;
+  --colorNavajo: #FFDEAC;
+  --colorGreen1: #4CAF50;
+  --colorCancel: #ff3960;
+
+  --colorBorderInput: var(--colorBlack);
+  --colorBorderInputHover: var(--colorPri);
+  --colorButton: var(--colorPri);
+  --colorButtonText: var(--colorWhite);
+  --colorButtonHover: var(--colorSec2);
+  --clorLabel: var(--colorGray3);
+  --borderRadius: 50px;
+
+  --sizeXsm: 11px;
+  --sizeSm: 14px;
+  --sizeMd: 15px;
+  --sizeLg: 22px;
+  --sizeXl: 32px;
+  --sizeXxl: 64px;
+
+  --borderRadiusInput: 5px;
+  --borderRadiusButton: 50px;
+
+  --transition: all 400ms ease-in-out 0s;
+}
