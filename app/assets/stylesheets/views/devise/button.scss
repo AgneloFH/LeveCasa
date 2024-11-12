@@ -1,0 +1,27 @@
+.actions {
+  border: none;
+  display: flex;
+  align-content: center;
+  transition: var(--transition);
+  background-color: var(--colorButton);
+  align-items: center;
+  border-radius: var(--borderRadiusButton);
+  margin: 15px 0;
+  height: 45px;
+
+  &:hover {
+    background-color: var(--colorButtonHover);
+  }
+}
+
+.btn {
+  display: grid;
+  font-size: 15px;
+  align-content: center;
+  background-color: transparent;
+  color: var(--colorButtonText);
+  cursor: pointer;
+  padding: 14px;
+  border: none;
+  width: 100%;
+}

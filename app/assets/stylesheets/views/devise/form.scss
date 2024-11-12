@@ -1,0 +1,66 @@
+.container-login-form {
+  display: grid;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding: 20px;
+
+  form {
+    display: grid;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .container-login-form {
+    padding: 10px;
+  }
+}
+
+.container-field {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  gap: 15px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+label {
+  height: auto;
+  font-size: 14px;
+  color: var(--colorGray3);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--colorBorderInput);
+  border-radius: var(--borderRadiusInput);
+  height: 45px;
+}
+
+/* Estilo para foco */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+  outline: none;
+  border: 1px solid var(--colorBorderInputHover);
+}
+
+a {
+  color: var(--colorBlack);
+  font-weight: 500;
+  font-size: 15px;
+}

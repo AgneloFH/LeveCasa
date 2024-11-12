@@ -1,0 +1,30 @@
+<style>
+  .home {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .btn-primary {
+    display: grid;
+    cursor: pointer;
+    justify-items: center;
+    background-color: black;
+    justify-items: center;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 18px;
+    height: 45px;
+    color: white;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+</style>
+<div class="home">
+  <%= button_to 'Login', new_user_session_path, method: :get, class: 'btn-primary' %>
+</div>

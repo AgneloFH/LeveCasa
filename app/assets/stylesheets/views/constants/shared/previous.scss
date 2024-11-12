@@ -1,0 +1,25 @@
+.bnt-previous {
+  display: grid;
+  font-size: 15px;
+  align-content: center;
+  background-color: transparent;
+  color: var(--colorButtonText);
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  width: auto;
+
+  i {
+    display: grid;
+    align-content: center;
+    border-radius: var(--borderRadius);
+    transition: var(--transition);
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+
+    &:hover {
+      background-color: var(--colorGray1);
+    }
+  }
+}

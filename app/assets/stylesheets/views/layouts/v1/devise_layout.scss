@@ -1,0 +1,50 @@
+.devise-layout {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  align-items: center;
+  align-content: center;
+  background-color: white;
+  padding: 20px;
+  height: 70px;
+}
+
+
+.main {
+  font-size: xxl;
+  grid-area: main;
+  padding: 20px;
+  background-color: white;
+  overflow-y: auto;
+  max-height: calc(100vh - 90px);
+}
+
+/* Personalização da barra de rolagem */
+.main::-webkit-scrollbar {
+  border-radius: var(--borderRadius2);
+  width: 10px;
+}
+
+.main::-webkit-scrollbar-track {
+  background: var(--clorGray1);
+}
+
+.main::-webkit-scrollbar-thumb {
+  transition: var(--transition);
+  background: blue;
+  border: 2px solid var(--colorGray1);
+  border-radius: 4px;
+}
+
+.main::-webkit-scrollbar-thumb:hover {
+  background: var(--color-sec2);
+}
