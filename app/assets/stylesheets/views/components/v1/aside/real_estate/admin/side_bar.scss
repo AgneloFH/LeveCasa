@@ -1,0 +1,23 @@
+.admin-sidebar-content {
+  display: grid;
+  align-content: flex-start;
+  row-gap: 30px;
+}
+
+.sidebar-logo,
+.sidebar-nav-list,
+.sidebar-footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+
+  h1 {
+    display: grid;
+    height: 30px;
+  }
+}
+
+.sidebar-nav-list {
+  border-bottom: 1px solid var(--colorPri);
+  padding-bottom: 20px;
+}

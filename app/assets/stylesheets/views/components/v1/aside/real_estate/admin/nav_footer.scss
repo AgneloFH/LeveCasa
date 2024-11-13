@@ -1,0 +1,47 @@
+.admin-sidebar-nav-footer {
+  display: grid;
+
+  .sidebar-nav-footer {
+    display: grid;
+
+    ul {
+      display: grid;
+      align-content: flex-start;
+      grid-template-columns: 1fr;
+      align-items: flex-start;
+      gap: 3px;
+
+      li {
+        display: grid;
+        align-content: center;
+        height: 40px;
+      }
+
+      a {
+        display: grid;
+        column-gap: 12px;
+        align-content: center;
+        align-items: center;
+        grid-template-columns: auto 1fr;
+        transition: var(--transition);
+        color: var(--colorBlack2);
+        border-radius: 5px;
+        padding: 10px;
+
+        i {
+          display: grid;
+          align-items: center;
+          transition: var(--transition);
+          color: var(--colorBlack2);
+          font-size: 1.2rem;
+        }
+      }
+
+      a:hover,
+      a:hover i {
+        background-color: var(--colorPri);
+        color: var(--colorWhite);
+      }
+    }
+  }
+}

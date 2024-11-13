@@ -7,4 +7,4 @@
 //= link views/layouts/v1/devise_layout.css
 //= link views/devise/index.css
 
-//= link views/layouts/v1/real_estate/base.css
+//= link import/v1/admin.css

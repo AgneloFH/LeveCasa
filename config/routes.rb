@@ -8,8 +8,10 @@ Rails.application.routes.draw do
 
   namespace :v1 do
     namespace :real_estate do
-      get 'dashboard', to: 'dashboards#show', as: :dashboard
-    end
+      namespace :admin do
+        get 'dashboard', to: 'dashboards#show', as: :dashboard
+      end
+   end
   end
 
 

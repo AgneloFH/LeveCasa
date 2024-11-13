@@ -1,5 +1,32 @@
-<%= render 'layouts/v1/real_estate/base' do %>
-<div class="admin-layout">
-  <%= yield %>
-</div>
-<% end %>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= content_for?(:title) ? yield(:title) : "Meu Projeto" %></title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag 'application', "data-turbo-track": "reload" %>
+  <%= stylesheet_link_tag 'import/v1/admin', media: 'all', 'data-turbo-track': 'reload' %>
+  <%= yield(:head) %>
+</head>
+
+<body>
+  <div class="admin-layout">
+    <header>
+      Cabeçalho
+    </header>
+
+    <aside>
+      <%= render 'components/v1/aside/real_estate/admin/side_bar' %>
+    </aside>
+
+    <main>
+      <%= yield %>
+    </main>
+
+    <%#= yield(:scripts) %>
+  </div>
+</body>
+
+</html>
