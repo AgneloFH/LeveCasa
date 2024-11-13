@@ -1,0 +1,58 @@
+@import 'views/constants/v1/root';
+@import 'views/constants/v1/theme';
+@import 'views/constants/v1/icons';
+
+.base-layout {
+  display: grid;
+  grid-template-areas:
+    "aside header"
+    "aside main";
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+}
+
+header {
+  grid-area: header;
+  display: grid;
+  align-items: center;
+  background-color: var(--colorGray1);
+  padding: 20px;
+  height: 70px;
+}
+
+aside {
+  grid-area: aside;
+  background-color: var(--tokenwhite);
+  padding: 18px;
+}
+
+main {
+  font-size: xxl;
+  grid-area: main;
+  padding: 20px;
+  background-color: var(--colorGray1);
+  overflow-y: auto;
+  max-height: calc(100vh - 90px);
+}
+
+/* Personalização da barra de rolagem */
+main::-webkit-scrollbar {
+  border-radius: var(--borderRadius2);
+  width: 10px;
+}
+
+main::-webkit-scrollbar-track {
+  background: var(--clorGray1);
+}
+
+main::-webkit-scrollbar-thumb {
+  transition: var(--transition);
+  background: var(--colorPri);
+  border: 2px solid var(--colorGray1);
+  border-radius: 4px;
+}
+
+main::-webkit-scrollbar-thumb:hover {
+  background: var(--color-sec2);
+}
