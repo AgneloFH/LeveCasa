@@ -1,0 +1,16 @@
+<div class="avatar-user-profile">
+  <div class="avatar-user-img">
+    <%# if @user.avatar.attached? %>
+    <%#= image_tag @user.avatar.variant(resize_to_limit: [150, 150]) %>
+    <%# else %>
+    <%= image_tag "default_avatar.JPEG", alt: "Avatar padrão" %>
+    <%# end %>
+  </div>
+  <div class="avatar-user-data">
+    <p>Agnelo Souza</p>
+    <span>tech.agnelo@gmail.com</span>
+  </div>
+  <div>
+    <i class="fi fi-rc-settings"></i>
+  </div>
+</div>

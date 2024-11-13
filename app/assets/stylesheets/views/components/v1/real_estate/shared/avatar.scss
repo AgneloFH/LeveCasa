@@ -1,0 +1,40 @@
+.avatar-user-profile {
+  display: grid;
+  align-content: center;
+  justify-items: flex-end;
+  grid-template-columns: 1fr auto auto;
+  column-gap: 20px;
+}
+
+.avatar-user-img {
+  width: 55px;
+  height: auto;
+
+  img {
+    border-radius: 100px;
+  }
+}
+
+.avatar-user-data {
+  display: grid;
+  align-content: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  row-gap: 4px;
+
+  p {
+    color: var(--colorBlack2);
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    height: auto;
+  }
+
+  span {
+    color: var(--colorGray3);
+    font-size: 12px;
+    font-weight: 500;
+    width: 100%;
+    height: auto;
+  }
+}

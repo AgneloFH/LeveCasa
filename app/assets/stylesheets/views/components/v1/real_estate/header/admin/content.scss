@@ -1,0 +1,11 @@
+.admin-content-header {
+  display: grid;
+  justify-items: flex-end;
+  grid-template-columns: auto;
+
+  .avatar {
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+}
