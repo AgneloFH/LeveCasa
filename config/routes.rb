@@ -6,5 +6,13 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }
 
+  namespace :v1 do
+    namespace :real_estate do
+      get 'dashboard', to: 'dashboards#show', as: :dashboard
+    end
+  end
+
+
+
   get "up" => "rails/health#show", as: :rails_health_check
 end
