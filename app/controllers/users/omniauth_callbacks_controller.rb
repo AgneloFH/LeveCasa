@@ -2,9 +2,9 @@
 
 class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   def some_action
-    @fallback_path = root_path  # Defina aqui o caminho de fallback desejado
+    @fallback_path = root_path
   end
-  
+
   # You should configure your model like this:
   # devise :omniauthable, omniauth_providers: [:twitter]
 

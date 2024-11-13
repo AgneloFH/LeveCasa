@@ -2,7 +2,7 @@
 
 class Users::ConfirmationsController < Devise::ConfirmationsController
   def some_action
-    @fallback_path = root_path  # Defina aqui o caminho de fallback desejado
+    @fallback_path = root_path
   end
 
   # GET /resource/confirmation/new

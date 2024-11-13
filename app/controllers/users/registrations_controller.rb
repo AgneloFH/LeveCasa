@@ -2,9 +2,9 @@
 
 class Users::RegistrationsController < Devise::RegistrationsController
   def some_action
-    @fallback_path = root_path  # Defina aqui o caminho de fallback desejado
+    @fallback_path = root_path
   end
-  
+
   # before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
 
