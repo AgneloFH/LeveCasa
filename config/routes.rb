@@ -10,6 +10,9 @@ Rails.application.routes.draw do
     namespace :real_estate do
       namespace :admin do
         get 'dashboard', to: 'dashboards#show', as: :dashboard
+        namespace :settings do
+        resource :settings, only: :show, path: '/'
+        end
       end
    end
   end
