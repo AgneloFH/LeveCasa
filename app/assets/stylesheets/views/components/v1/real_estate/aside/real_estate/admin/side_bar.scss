@@ -14,10 +14,12 @@
   h1 {
     display: grid;
     height: 30px;
+    color: var(--colorPri);
+    font-weight: 600;
   }
 }
 
 .sidebar-nav-list {
-  border-bottom: 1px solid var(--colorPri);
+  border-bottom: 1px solid var(--colorGray4);
   padding-bottom: 20px;
 }

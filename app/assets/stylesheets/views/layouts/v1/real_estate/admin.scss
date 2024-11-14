@@ -1,10 +1,3 @@
-@import 'views/constants/v1/root';
-@import 'views/constants/v1/theme';
-@import 'views/constants/v1/icons';
-
-
-
-
 /* Layout base */
 .admin-layout {
   display: grid;
@@ -22,8 +15,9 @@ header {
   display: grid;
   align-items: center;
   background-color: var(--colorGray1);
-  padding: 20px;
-  height: 70px;
+  border-bottom: 1px solid var(--colorGray4);
+  padding: 5px 20px;
+  height: 80px;
 }
 
 /* Sidebar */
