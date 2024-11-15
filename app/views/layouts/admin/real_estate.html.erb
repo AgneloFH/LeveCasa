@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <%= render(AppLayoutComponent.new) do |layout| %>
+  <%= render(Layout::AppLayoutComponent.new) do |layout| %>
 
   <% layout.with_header do %>
   <%= render 'admin/header/real_estate' %>

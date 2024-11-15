@@ -1,7 +1,0 @@
-# frozen_string_literal: true
-
-class AppLayoutComponent < ViewComponent::Base
-  renders_one :header
-  renders_one :aside
-  renders_one :scripts
-end
