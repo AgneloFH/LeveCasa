@@ -15,11 +15,11 @@
   <%= render(AppLayoutComponent.new) do |layout| %>
 
   <% layout.with_header do %>
-  <%= render 'components/v1/real_estate/header/admin/content' %>
+  <%= render 'admin/header/real_estate' %>
   <% end %>
 
   <% layout.with_aside do %>
-  <%= render 'components/v1/real_estate/aside/admin/side_bar' %>
+  <%= render 'admin/aside/real_estate' %>
   <% end %>
 
   <%= yield %>
