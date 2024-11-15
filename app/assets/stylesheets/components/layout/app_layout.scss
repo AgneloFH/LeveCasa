@@ -16,6 +16,7 @@
   align-items: center;
   background-color: var(--colorGray1);
   border-bottom: 1px solid var(--colorGray4);
+  transition: var(--transition);
   padding: 5px 20px;
   height: 80px;
 }
@@ -68,12 +69,9 @@ main::-webkit-scrollbar-thumb:hover {
   .app-layout {
     grid-template-areas:
       "header header header header"
-      "main main main main";
+      "main main main main"
+      "aside aside aside aside";
     grid-template-columns: repeat(4, 1fr);
-  }
-
-  aside {
-    display: none;
   }
 
   /* Header */
@@ -81,6 +79,13 @@ main::-webkit-scrollbar-thumb:hover {
     border-bottom: none;
     padding: 15px 10px;
     height: max-content;
+    transition: var(--transition);
+  }
+
+  /* Sidebar */
+  aside {
+    padding: 10px;
+    transition: var(--transition);
   }
 }
 

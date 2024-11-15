@@ -1,4 +1,4 @@
-.admin-sidebar-content {
+.sidebar-content {
   display: grid;
   align-content: flex-start;
   padding-top: 10px;
@@ -29,3 +29,22 @@
 }
 
 .sidebar-footer {}
+
+@media (max-width: 767px) {
+  .sidebar-content {
+    padding-top: 0;
+  }
+
+  .sidebar-logo {
+    display: none;
+  }
+
+  .sidebar-nav-list {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .sidebar-footer {
+    display: none;
+  }
+}

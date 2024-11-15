@@ -1,6 +1,7 @@
 .navigation-component {
   display: grid;
   grid-template-columns: 1fr;
+  transition: var(--transition);
 
 }
 
@@ -20,7 +21,6 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 3px;
-
 }
 
 .navigation-component-nav li a {
@@ -47,4 +47,28 @@
 .navigation-component-nav li a:hover i {
   background-color: var(--colorPri);
   color: var(--colorWhite);
+}
+
+@media (max-width: 767px) {
+  .navigation-component-nav li {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    column-gap: 5px;
+  }
+
+  .navigation-component-nav li a {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .navigation-component-nav li i {
+    display: grid;
+    justify-items: center;
+    font-size: 1rem;
+  }
+
 }
