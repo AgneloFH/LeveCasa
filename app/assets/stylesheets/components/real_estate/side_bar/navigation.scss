@@ -1,0 +1,45 @@
+.navigation-component {
+  display: grid;
+  grid-template-columns: 1fr;
+
+}
+
+.navigation-component-nav {
+  display: grid;
+  grid-template-columns: 1fr;
+
+}
+
+.navigation-component-nav ul {
+  display: grid;
+  grid-template-columns: 1fr;
+
+}
+
+.navigation-component-nav li {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 3px;
+
+}
+
+.navigation-component-nav li a {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  border-radius: 5px;
+  column-gap: 12px;
+  padding: 10px;
+  transition: var(--transition);
+}
+
+.navigation-component-nav li i {
+  display: grid;
+  transition: var(--transition);
+
+}
+
+.navigation-component-nav li a:hover,
+.navigation-component-nav li a:hover i {
+  background-color: var(--colorPri);
+  color: var(--colorWhite);
+}

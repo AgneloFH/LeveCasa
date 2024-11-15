@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= content_for?(:title) ? yield(:title) : "Meu Projeto" %></title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag 'application', "data-turbo-track": "reload" %>
+  <%= stylesheet_link_tag 'import/admin/real_estate', media: 'all', 'data-turbo-track': 'reload' %>
+  <%= yield(:head) %>
+</head>
+
+<body>
+  <%= render(AppLayoutComponent.new) do |layout| %>
+
+  <% layout.with_header do %>
+  <%= render 'components/v1/real_estate/header/admin/content' %>
+  <% end %>
+
+  <% layout.with_aside do %>
+  <%= render 'components/v1/real_estate/aside/admin/side_bar' %>
+  <% end %>
+
+  <%= yield %>
+
+  <% layout.scripts do %>
+  <% end %>
+  <% end %>
+</body>
+
+</html>

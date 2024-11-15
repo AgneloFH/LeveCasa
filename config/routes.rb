@@ -6,16 +6,20 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }
 
-  namespace :v1 do
-    namespace :real_estate do
-      namespace :admin do
-        get 'dashboard', to: 'dashboards#show', as: :dashboard
+    namespace :admin do
+      get 'dashboard', to: 'dashboards#show', as: :dashboard
+      namespace :real_estate do
         namespace :settings do
-        resource :settings, only: :show, path: '/'
+          # A rota para index de settings
+          resources :settings, only: :index
+
+          namespace :settings do
+            resources :property_types, path: 'property_types', only: [:index, :new, :create, :edit, :update, :destroy, :show]
+          end
         end
       end
-   end
-  end
+    end
+
 
 
 

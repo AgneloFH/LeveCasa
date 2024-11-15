@@ -1,0 +1,108 @@
+/* Layout base */
+.app-layout {
+  display: grid;
+  grid-template-areas:
+    "aside aside header header header header header header header header header header"
+    "aside aside main main main main main main main main main main";
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+}
+
+/* Header */
+.header {
+  grid-area: header;
+  display: grid;
+  align-items: center;
+  background-color: var(--colorGray1);
+  border-bottom: 1px solid var(--colorGray4);
+  padding: 5px 20px;
+  height: 80px;
+}
+
+/* Sidebar */
+aside {
+  grid-area: aside;
+  background-color: var(--tokenwhite);
+  transition: var(--transition);
+  padding: 18px;
+}
+
+/* Main content */
+main {
+  display: grid;
+  align-content: flex-start;
+  font-size: xxl;
+  grid-area: main;
+  padding: 20px;
+  background-color: var(--colorGray1);
+  overflow-y: auto;
+  max-height: calc(100vh - 90px);
+}
+
+/* Scrollbar customization */
+main::-webkit-scrollbar {
+  border-radius: var(--borderRadius2);
+  width: 10px;
+}
+
+main::-webkit-scrollbar-track {
+  background: var(--colorGray1);
+}
+
+main::-webkit-scrollbar-thumb {
+  transition: var(--transition);
+  background: var(--colorPri);
+  border: 2px solid var(--colorGray1);
+  border-radius: 4px;
+}
+
+main::-webkit-scrollbar-thumb:hover {
+  background: var(--color-sec2);
+}
+
+/* Media queries for responsiveness */
+
+/* Telas pequenas - Smartphones */
+@media (max-width: 767px) {
+  .app-layout {
+    grid-template-areas:
+      "header header header header header header"
+      "main main main main main main";
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  aside {
+    display: none;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .app-layout {
+    grid-template-areas:
+      "aside aside aside header header header header header header header header header"
+      "aside aside aside main main main main main main main main main";
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+/* Desktops médios */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .app-layout {
+    grid-template-areas:
+      "aside aside header header header header header header header header header header"
+      "aside aside main main main main main main main main main main";
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+/* Desktops grandes */
+@media (min-width: 1441px) {
+  .app-layout {
+    grid-template-areas:
+      "aside header header header header header header header header header header header"
+      "aside main main main main main main main main main main main";
+    grid-template-columns: 280px 3fr 8fr;
+  }
+}

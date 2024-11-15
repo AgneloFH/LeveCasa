@@ -3,8 +3,7 @@
 //= link_tree ../../javascript .js
 //= link_tree ../../../vendor/javascript .js
 
-
 //= link views/layouts/v1/devise_layout.css
 //= link views/devise/index.css
 
-//= link import/v1/admin.css
+//= link import/admin/real_estate.css
