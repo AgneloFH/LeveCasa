@@ -2,7 +2,7 @@
 
 module Admin
   module Settings
-    class SettingsController < Admin::RealEstate::BaseController
+    class SettingsController < AdminController
       def index
         # Ação para exibir as configurações
       end

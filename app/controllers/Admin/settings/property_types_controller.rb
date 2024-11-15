@@ -2,7 +2,7 @@
 
 module Admin
   module Settings
-    class PropertyTypesController < Admin::RealEstate::BaseController
+    class PropertyTypesController < AdminController
       # Exibe a lista de PropertyTypes ordenados pelo nome
       def index
         @property_types = PropertyType.order(:name)

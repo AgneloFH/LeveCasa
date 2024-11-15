@@ -1,0 +1,20 @@
+.bell-note-compenent {
+  display: grid;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  border-radius: var(--borderRadiusButton);
+  transition: var(--transition);
+  padding: 10px;
+
+  i {
+    display: grid;
+    font-size: 1.2rem;
+    height: max-content;
+  }
+
+  &:hover {
+    background-color: var(--colorNavajo);
+  }
+}

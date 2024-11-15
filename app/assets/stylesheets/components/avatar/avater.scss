@@ -1,0 +1,55 @@
+.avatar-component {
+  display: grid;
+  align-content: center;
+  align-items: flex-end;
+  justify-content: flex-end;
+  grid-template-columns: auto auto auto;
+  column-gap: 14px;
+}
+
+.avatar-component-img {
+  display: grid;
+  align-content: center;
+  border-radius: 50px;
+  height: 55px;
+  width: 55px;
+
+  img {
+    border-radius: 50px;
+  }
+}
+
+.avatar-user-data {
+  display: grid;
+  align-content: center;
+  grid-template-columns: 1fr;
+}
+
+.avatar-settings {
+  display: grid;
+  align-content: center;
+  grid-template-columns: 1fr;
+}
+
+/* Telas pequenas - Smartphones */
+@media (max-width: 767px) {
+  .avatar-component {
+    grid-template-columns: auto;
+  }
+
+  .avatar-settings {
+    display: none;
+  }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .avatar-component {
+    grid-template-columns: auto auto;
+    max-width: fit-content;
+  }
+
+  .avatar-user-data {
+    display: none;
+  }
+}

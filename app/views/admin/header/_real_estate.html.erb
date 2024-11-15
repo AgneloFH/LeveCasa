@@ -1,4 +1,18 @@
-<div class="admin-content-header">
+<div class="content-header">
+  <div class="headerSearchInput">
+    <%= render "shared/search_input",
+                url: root_path,
+                placeholder: "Search customers...",
+                button_icon: "shared/icons/command",
+                icon_partial: "shared/icons/br_search"
+    %>
+  </div>
+
+  <div class="headerNote">
+    <%= render 'shared/email_note' %>
+    <%= render 'shared/bell_note' %>
+  </div>
+
   <div class="avatar">
     <%= render 'shared/avatar/avatar_component' %>
   </div>

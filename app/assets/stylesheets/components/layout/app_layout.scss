@@ -75,6 +75,13 @@ main::-webkit-scrollbar-thumb:hover {
   aside {
     display: none;
   }
+
+  /* Header */
+  .header {
+    border-bottom: none;
+    padding: 15px 10px;
+    height: max-content;
+  }
 }
 
 /* Tablets */

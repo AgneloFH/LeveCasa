@@ -1,0 +1,20 @@
+.develop-not {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  grid-template-columns: 1fr;
+  padding-top: 100px;
+
+  h3 {
+    display: grid;
+    text-align: center;
+    height: max-content;
+    color: brown;
+  }
+
+  img {
+    width: 380px;
+    height: 200px;
+  }
+}

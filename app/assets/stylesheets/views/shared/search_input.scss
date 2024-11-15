@@ -1,0 +1,58 @@
+form {
+  display: grid;
+  height: max-content;
+}
+
+.input-group-search {
+  display: grid;
+  align-items: center;
+  align-content: center;
+  grid-template-columns: auto 1fr auto;
+  border: 1px solid var(--colorBorderInput);
+  background-color: var(--colorWhite);
+  border-radius: var(--borderRadiusInput);
+  height: max-content;
+  max-width: 300px;
+  padding: 5px;
+  column-gap: 8px;
+
+  i {
+    display: grid;
+    height: max-content;
+    font-size: 1rem;
+    color: var(--colorGray3);
+  }
+
+  input[type="text"] {
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    outline: none;
+  }
+
+  .btn-submit {
+    display: grid;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    grid-template-columns: auto auto;
+    background-color: var(--colorGray1);
+    border-radius: var(--borderRadiusButton);
+    color: var(--colorGray3);
+    font-size: 15px;
+    column-gap: 5px;
+    padding: 0 10px;
+    outline: none;
+  }
+
+}
+
+/* Media queries para responsividade */
+
+/* Telas pequenas - Smartphones */
+@media (max-width: 767px) {
+  .input-group-search {
+    max-width: inherit;
+  }
+}
