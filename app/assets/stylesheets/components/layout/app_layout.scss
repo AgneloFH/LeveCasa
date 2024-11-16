@@ -97,38 +97,42 @@ main::-webkit-scrollbar-thumb:hover {
     width: max-content;
     bottom: 20px;
     padding: 5px;
+
+    /* Centralizar horizontalmente */
+    left: 50%;
+    transform: translateX(-50%);
   }
 
-}
 
-/* Tablets */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .app-layout {
-    display: grid;
-    width: 100%;
-    grid-template-areas:
-      "aside aside header header header header header header"
-      "aside aside main main main main main main";
-    grid-template-columns: repeat(8, 1fr);
+  /* Tablets */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .app-layout {
+      display: grid;
+      width: 100%;
+      grid-template-areas:
+        "aside aside header header header header header header"
+        "aside aside main main main main main main";
+      grid-template-columns: repeat(8, 1fr);
+    }
   }
-}
 
-/* Desktops médios */
-@media (min-width: 1025px) and (max-width: 1440px) {
-  .app-layout {
-    grid-template-areas:
-      "aside aside header header header header header header header header header header"
-      "aside aside main main main main main main main main main main";
-    grid-template-columns: repeat(12, 1fr);
+  /* Desktops médios */
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    .app-layout {
+      grid-template-areas:
+        "aside aside header header header header header header header header header header"
+        "aside aside main main main main main main main main main main";
+      grid-template-columns: repeat(12, 1fr);
+    }
   }
-}
 
-/* Desktops grandes */
-@media (min-width: 1441px) {
-  .app-layout {
-    grid-template-areas:
-      "aside header header header header header header header header header header header"
-      "aside main main main main main main main main main main main";
-    grid-template-columns: 280px 3fr 8fr;
+  /* Desktops grandes */
+  @media (min-width: 1441px) {
+    .app-layout {
+      grid-template-areas:
+        "aside header header header header header header header header header header header"
+        "aside main main main main main main main main main main main";
+      grid-template-columns: 280px 3fr 8fr;
+    }
   }
 }
