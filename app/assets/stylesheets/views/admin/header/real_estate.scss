@@ -44,7 +44,7 @@
     row-gap: 14px;
     /* Duas colunas em dispositivos pequenos */
     grid-template-areas:
-      "header-note avatar"
+      "avatar header-note"
       "headerSearchInput headerSearchInput";
   }
 
@@ -53,21 +53,21 @@
   }
 
   .headerNote {
-    flex-grow: 1;
+    flex-grow: 2;
   }
 
   .avatar {
-    flex-grow: 2;
+    flex-grow: 1;
   }
 }
 
 /* Tablets */
 @media (max-width: 767px) {
   .content-header {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: auto 1fr;
     /* Ajusta para tablets */
     grid-template-areas:
-      "headerNote avatar"
+      "avatar headerNote"
       "headerSearchInput headerSearchInput";
     row-gap: 14px;
   }

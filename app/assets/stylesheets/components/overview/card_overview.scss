@@ -1,0 +1,19 @@
+.card-overview {
+  display: grid;
+  height: max-content;
+}
+
+.card-overview-header {
+  display: grid;
+  height: max-content;
+
+  .card-overview-title h1 {
+    display: flex;
+    height: max-content;
+  }
+
+  .card-overview-description {
+    display: flex;
+    height: max-content;
+  }
+}

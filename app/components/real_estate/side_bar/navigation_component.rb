@@ -3,28 +3,29 @@
 module RealEstate
   module SideBar
     class NavigationComponent < ViewComponent::Base
-      renders_many :links, "LinkComponent"  # Permite múltiplos links
+      renders_many :links, "LinkComponent" # Permite adicionar vários links
 
       class LinkComponent < ViewComponent::Base
-        # Espera os parâmetros: name, href e icon (nome do partial do ícone)
-        def initialize(name:, href:, icon:)
+        # Parâmetros esperados: name, href, icon, className
+        def initialize(name:, href:, icon: nil, class_name: nil)
           @name = name
           @href = href
           @icon = icon
+          @class_name = class_name
         end
 
         def call
-          content_tag(:a, href: @href, class: "nav-link") do
-            concat(render_icon) # Renderiza o ícone
-            concat(@name)       # Adiciona o nome do link
+          content_tag(:a, href: @href, class: "nav-link #{@class_name}") do
+            concat(render_icon) if @icon.present? # Renderiza o ícone, se existir
+            concat(content_tag(:span, @name))    # Adiciona o texto do link
           end
         end
 
         private
 
         def render_icon
-          # Renderiza o partial correspondente ao nome do ícone
-          render(partial: "shared/icons/#{@icon}")
+          # Renderiza o partial do ícone, se disponível
+          render(partial: "shared/icons/#{@icon}") if @icon.present?
         end
       end
     end

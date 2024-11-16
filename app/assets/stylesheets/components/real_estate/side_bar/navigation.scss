@@ -53,7 +53,7 @@
   .navigation-component-nav li {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto;
-    column-gap: 5px;
+    column-gap: 1px;
   }
 
   .navigation-component-nav li a {
@@ -61,14 +61,21 @@
     align-items: center;
     justify-items: center;
     grid-template-columns: 1fr;
-    font-size: 12px;
-    padding: 5px;
+    border-radius: var(--borderRadiusButton);
+    font-size: 10px;
+    padding: 10px;
   }
 
   .navigation-component-nav li i {
     display: grid;
     justify-items: center;
     font-size: 1rem;
+  }
+
+  .navigation-component-nav li a:hover,
+  .navigation-component-nav li a:hover i {
+    background-color: var(--colorGray1);
+    color: initial;
   }
 
 }
