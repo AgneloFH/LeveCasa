@@ -62,14 +62,15 @@
     justify-items: center;
     grid-template-columns: 1fr;
     border-radius: var(--borderRadiusButton);
-    font-size: 12px;
+    font-size: 14px;
     padding: 10px;
+    row-gap: 3px;
   }
 
   .navigation-component-nav li i {
     display: grid;
     justify-items: center;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   .navigation-component-nav li a:hover,
