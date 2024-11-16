@@ -25,7 +25,7 @@
 /* Sidebar */
 aside {
   grid-area: aside;
-  background-color: var(--tokenwhite);
+  background-color: var(--colorPri);
   transition: var(--transition);
   padding: 18px;
 }
@@ -89,7 +89,7 @@ main::-webkit-scrollbar-thumb:hover {
     display: grid;
     justify-self: center;
     position: fixed;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     border-radius: var(--borderRadiusButton);
     background-color: var(--colorWhite);
     transition: var(--transition);

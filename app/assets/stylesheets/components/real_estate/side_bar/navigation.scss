@@ -27,25 +27,28 @@
   display: grid;
   grid-template-columns: auto 1fr;
   transition: var(--transition);
-  color: var(--colorBlack2);
+  color: var(--colorWhite);
   border-radius: 5px;
   column-gap: 14px;
   font-size: 15px;
   font-weight: lighter;
-  padding: 10px;
+  padding: 12px;
 }
 
 .navigation-component-nav li i {
   display: grid;
   transition: var(--transition);
-  color: var(--colorBlack2);
+  color: var(--colorWhite);
   font-size: 1.2rem;
 
 }
 
+.navigation-component-nav li a:hover {
+  background: linear-gradient(135deg, rgba(255, 222, 172, 0.1), #FFDEAC);
+}
+
 .navigation-component-nav li a:hover,
 .navigation-component-nav li a:hover i {
-  background-color: var(--colorPri);
   color: var(--colorWhite);
 }
 
@@ -62,6 +65,7 @@
     justify-items: center;
     grid-template-columns: 1fr;
     border-radius: var(--borderRadiusButton);
+    color: var(--colorBlack2);
     font-size: 14px;
     padding: 10px;
     row-gap: 3px;
@@ -70,6 +74,7 @@
   .navigation-component-nav li i {
     display: grid;
     justify-items: center;
+    color: var(--colorBlack2);
     font-size: 1.3rem;
   }
 
